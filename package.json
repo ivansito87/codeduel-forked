@@ -20,8 +20,6 @@
   },
   "dependencies": {
     "express": "^4.16.3",
-    "if-env": "^1.0.4",
-    "jquery": "^3.4.1",
-    "react-ace": "^7.0.2"
+    "if-env": "^1.0.4"
   }
 }

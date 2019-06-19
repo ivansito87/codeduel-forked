@@ -1,31 +1,14 @@
 import React from "react";
-import "./CodeEditor.css";
-import $ from "jquery";
+// import "./CodeEditor.css";
+import AceEditor from "react-ace";
 
-const CodeEditor = () => (
-    <>
-        <fieldset>
-            <img src="https://raw.githubusercontent.com/ajaxorg/ace/master/api/resources/images/ace_logo.png"/>
-            <a href="https://ace.c9.io/" target="blank">ace.c9.io</a>
-            <label>Theme:
-                <select id="ace-theme" size="1">
-
-                    <optgroup label="dark">
-                        <option value="monokai">monokai</option>
-                    </optgroup>
-                </select>
-            </label>
-
-            <label>Mode:
-                <select id="ace-mode">
-                    <option value="JavaScript">JavaScript</option>
-                </select>
-            </label>
-
-        </fieldset>
-        <div className="wrapper">
-            <code id="ace-editorid">
-            </code>
+class CodeEditor extends React.Component{
+    render(){
+        return <div>
+            <AceEditor/>
         </div>
-    </>);
+    }
+}
+
+
 export default CodeEditor;
